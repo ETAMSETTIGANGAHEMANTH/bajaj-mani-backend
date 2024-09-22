@@ -24,7 +24,7 @@ app.use(cors({
 
 const fullName = 'ESWARA MANIKANTA CHANDRA PRASAD PERUMALLA';
 const dob = '02102003';
-const email = 'manikantaperumalla2102002@gmail.com';
+const email = 'pp2549@srmist.edu.in';
 const rollNumber = 'RA2111003010745';
 
 function separateData(data) {
