@@ -6,7 +6,7 @@ const WebSocket = require('ws');
 const app = express();
 app.use(bodyParser.json());
 
-const allowedOrigins = ['http://localhost:3001', 'http://localhost:3000'];
+const allowedOrigins = ['https://bajaj-mani-frontend-7d18afbf56f7.herokuapp.com/bfhl'];
 
 app.use(cors({
     origin: function (origin, callback) {
