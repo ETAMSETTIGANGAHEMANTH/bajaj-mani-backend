@@ -6,7 +6,7 @@ const WebSocket = require('ws');
 const app = express();
 app.use(bodyParser.json());
 
-const allowedOrigins = ['https://bajaj-mani-frontend-7d18afbf56f7.herokuapp.com/bfhl'];
+const allowedOrigins = ['https://bajaj-mani-frontend-7d18afbf56f7.herokuapp.com/'];
 
 app.use(cors({
     origin: function (origin, callback) {
@@ -64,6 +64,11 @@ app.get('/bfhl', (req, res) => {
     };
 
     res.status(200).json(response);
+});
+
+// Add a root route to resolve the "Cannot GET /" issue
+app.get('/', (req, res) => {
+    res.send('Welcome to the BFHL API');
 });
 
 const server = require('http').createServer(app);
